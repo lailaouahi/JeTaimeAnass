@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/idNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pénom"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/idPrénom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de naissance"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/idDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/idAddresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexe"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/sexehomme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homme"
+                android:onClick="radioClicked"/>
+            <RadioButton
+                android:id="@+id/sexefemme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femme"
+                android:onClick="radioClicked"/>
+            <RadioButton
+                android:id="@+id/sexeautre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autre"
+                android:onClick="radioClicked"/>
+
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <EditText
+        android:id="@+id/idUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="30dp"
+        android:text="Password"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/idPassword"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+            android:id="@+id/idSenregistrer"
+            android:text="s'enregistrer"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.06"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
