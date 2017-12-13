@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
-    EditText vNom,vPrénom,vDate,vAdresse,vUsername,vPassword;
+    EditText vNom,vPrénom,vEmail,vTéléphone,vUsername,vPassword;
     Button Senregistrer;
 
     @Override
@@ -16,8 +16,8 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_register);
         vNom = (EditText) findViewById(R.id.idNom);
         vPrénom = (EditText) findViewById(R.id.idPrénom);
-        vDate = (EditText) findViewById(R.id.idDate);
-        vAdresse = (EditText) findViewById(R.id.idAddresse);
+        vEmail = (EditText) findViewById(R.id.idEmail);
+        vTéléphone = (EditText) findViewById(R.id.idTel);
         vUsername = (EditText) findViewById(R.id.idUsername);
         vPassword = (EditText) findViewById(R.id.idPassword);
         Senregistrer = (Button) findViewById(R.id.idSenregistrer);

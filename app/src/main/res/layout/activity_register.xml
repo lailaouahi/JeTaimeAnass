@@ -37,13 +37,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date de naissance"
+            android:text="Email"
             android:textSize="15sp"
             android:layout_marginLeft="30dp"
             />
 
         <EditText
-            android:id="@+id/idDate"
+            android:id="@+id/idEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -51,15 +51,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adresse"
+            android:text="Tel"
             android:textSize="15sp"
             android:layout_marginLeft="30dp"
             />
 
         <EditText
-            android:id="@+id/idAddresse"
+            android:id="@+id/idTel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="phone"
             />
 
         <TextView
@@ -97,34 +98,34 @@
 
         </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:textSize="15sp"
-        android:layout_marginLeft="30dp"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            />
 
-    <EditText
-        android:id="@+id/idUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-         />
+        <EditText
+            android:id="@+id/idUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_marginLeft="30dp"
-        android:text="Password"
-        android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="Password"
+            android:textSize="15sp" />
 
-    <EditText
-        android:id="@+id/idPassword"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        <EditText
+            android:id="@+id/idPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
     <Button
             android:id="@+id/idSenregistrer"
