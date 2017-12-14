@@ -8,8 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
+    DataBaseHelper helper = new DataBaseHelper(this);
     Button blogin;
     EditText Usernamee,Passwordd;
     TextView LienCréationCpmte;
@@ -31,7 +33,17 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.idLogin:
+            String username = Usernamee.getText().toString();
+            String password = Passwordd.getText().toString();
 
+            String passMaatch  = helper.searchPassword(username);
+            if(password.equals(passMaatch)){
+                Toast pass = Toast.makeText(Login.this,"Bienvenu",Toast.LENGTH_SHORT);
+                pass.show();
+            }else{
+                Toast pass = Toast.makeText(Login.this,passMaatch,Toast.LENGTH_SHORT);
+                pass.show();
+            }
 
                 break;
             case R.id.idCréerCompte:
