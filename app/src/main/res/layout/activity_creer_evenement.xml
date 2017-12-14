@@ -18,85 +18,159 @@
             android:layout_height="match_parent">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Formulaire de Création d'un évènement"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="@color/mauve"
-        android:inputType="textEmailAddress"
-        android:drawablePadding="2dp"
-        android:layout_marginTop="25dp"
-        android:layout_gravity="center"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nom de l'évènement"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:textColor="@color/blanc"
-        android:inputType="textEmailAddress"
-        android:drawablePadding="2dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="15dp"
-        />
-    <EditText
-        android:id="@+id/idNomEvenement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-     />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choisissez la date de votre'évènement"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:textColor="@color/blanc"
-        android:inputType="textEmailAddress"
-        android:drawablePadding="2dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="15dp"
-        android:layout_margin="20dp"
-        />
-    <DatePicker
-        android:layout_width="330dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center">
-
-    </DatePicker>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Le nombre maximal de participants"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:textColor="@color/blanc"
-        android:inputType="textEmailAddress"
-        android:drawablePadding="2dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="15dp"
-        />
-    <EditText
-        android:id="@+id/idNbrMaxParticipants"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-            <Button
-                android:id="@+id/idSubmitCréation"
-                android:text="Submit"
-                android:textColor="@color/rosefushia"
-                android:layout_width="171dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Formulaire de Création d'un évènement"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/mauve"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="2dp"
+                android:layout_marginTop="25dp"
                 android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom de l'évènement"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blanc"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="2dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="15dp"
+                />
+            <EditText
+                android:id="@+id/idNomEvenement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:drawablePadding="2dp"
+                android:inputType="textEmailAddress"
+                android:text="Activité"
+                android:textColor="@color/blanc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idActivite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:drawablePadding="2dp"
+                android:inputType="textEmailAddress"
+                android:text="Ville"
+                android:textColor="@color/blanc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/IdNomVille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:drawablePadding="2dp"
+                android:inputType="textEmailAddress"
+                android:text="Le nombre maximal de participants"
+                android:textColor="@color/blanc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idNbrMaxParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choisissez la date de votre'évènement"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blanc"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="2dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_margin="20dp"
+                />
+
+            <DatePicker
+                android:id="@+id/idDate"
+                android:layout_width="325dp"
+                android:layout_height="348dp"
+                android:layout_gravity="center"
+                android:datePickerMode="calendar">
+
+            </DatePicker>
+
+            <TimePicker
+                android:id="@+id/idTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:drawablePadding="2dp"
+                android:inputType="textEmailAddress"
+                android:text="Veuillez entre le lieu ou choisir un lieu à proximité"
+                android:textColor="@color/blanc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idLieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/idTrouverLieu"
+                android:text="Trouver Lieu"
+                android:textColor="@color/rosefushia"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="230dp"
                 android:layout_weight="0.06"
                 android:layout_margin="10dp"
                 android:background="@drawable/boutton"
                 />
-     </LinearLayout>
+
+            <Button
+                android:id="@+id/idSubmitCréation"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0.06"
+                android:background="@drawable/boutton"
+                android:onClick="onClick"
+                android:text="Submit"
+                android:textColor="@color/rosefushia" />
+
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

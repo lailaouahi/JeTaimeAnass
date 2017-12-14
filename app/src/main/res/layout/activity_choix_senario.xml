@@ -11,29 +11,28 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Faites votre choix!!"
-        android:textStyle="bold"
-        android:textSize="37sp"
-        android:textColor="@color/mauve"
-        android:inputType="textEmailAddress"
-        android:drawablePadding="2dp"
         android:layout_gravity="center"
-        android:layout_marginTop="140dp"
         android:layout_marginLeft="15dp"
-        />
+        android:layout_marginTop="140dp"
+        android:drawablePadding="2dp"
+        android:inputType="textEmailAddress"
+        android:text="Faites votre choix!!"
+        android:textColor="@color/mauve"
+        android:textSize="37sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/idCréerEvènement"
-        android:layout_width="171dp"
+        android:layout_width="195dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginBottom="15sp"
         android:layout_marginTop="40sp"
         android:background="@drawable/boutton"
-        android:text="Créer Evènement"
-        android:textColor="@color/rosefushia"
         android:inputType="textEmailAddress"
-        />
+        android:onClick="onClick"
+        android:text="Créer Evènement"
+        android:textColor="@color/rosefushia" />
 
     <Button
         android:id="@+id/idAdhérerEvènement"
