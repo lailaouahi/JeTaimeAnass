@@ -27,7 +27,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     private static final String createTable="CREATE TABLE Utilisateur(idUser varchar(30) primary key not null, " +
             " UserName text, Nom text, Prenom text, Telephone text, Email text, Sexe integer, password text);";
 
-    public DataBaseHelper(Context context){super(context,DB_name,null,1);}
+    public DataBaseHelper(Context context){super(context,DB_name,null,10);}
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(createTable);
@@ -46,8 +46,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(Prenomcolumn, u.getPrenom());
         values.put(Telephonecolumn, u.getTele());
         values.put(Emailcolumn, u.getEmail());
-        //values.put(Passwordcolumn, u.getPassword());
         values.put(Sexecolumn, u.getSexe());
+        values.put(Passwordcolumn, u.getPassword());
         db.insert(Table_name,null, values);
         db.close();
     }
@@ -60,14 +60,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         b = "not found";
         if(cursor.moveToFirst()){
             do {
-                a = cursor.getString(2);
+                a = cursor.getString(cursor.getColumnIndex("UserName"));
                 if (a.equals(username)){
-                    b = cursor.getString(3);
-                    return a;
+                    b = cursor.getString(cursor.getColumnIndex("password"));
                 }
             }while (cursor.moveToNext());
         }
-        return cursor.getCount()+"";
+        return b;
     }
 
     @Override
