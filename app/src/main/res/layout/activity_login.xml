@@ -4,53 +4,86 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:paddingLeft="10dp"
+    android:paddingRight="18dp"
+    android:background="@drawable/rose">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:textSize="20sp"
-        android:layout_margin="10dp"
-        />
-
-    <EditText
-        android:id="@+id/idUsername"
-        android:layout_width="359dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textSize="20sp"
-        android:layout_margin="10dp"
-        />
-    <EditText
-        android:id="@+id/idPassword"
-        android:inputType="textPassword"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        />
-    <Button
-        android:id="@+id/idLogin"
-        android:text="Se connecter"
-        android:layout_width="171dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0.06"
-        android:layout_margin="10dp"
-        />
-    <TextView
-        android:id="@+id/idCréerCompte"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Créer un compte"
-        android:textSize="13sp"
-        android:layout_gravity="center"
-        android:textStyle="italic"
-        />
+        android:layout_height="match_parent">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="165dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/blanc"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="2dp"
+            />
+
+        <EditText
+            android:id="@+id/idUsername"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/blanc"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="2dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/idPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:id="@+id/idLogin"
+            android:text="Se connecter"
+            android:textColor="@color/rosefushia"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.06"
+            android:layout_margin="10dp"
+            android:background="@drawable/boutton"
+            />
+        <TextView
+            android:id="@+id/idCréerCompte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créer un compte"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            />
+
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
