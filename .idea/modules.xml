@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LogRegister.iml" filepath="$PROJECT_DIR$/LogRegister.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeTaimeAnass.iml" filepath="$PROJECT_DIR$/JeTaimeAnass.iml" />
+      <module fileurl="file://C:\Users\Anass\AndroidStudioProjects\projett\JeTaimeAnass\LogRegister.iml" filepath="C:\Users\Anass\AndroidStudioProjects\projett\JeTaimeAnass\LogRegister.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Anass\AndroidStudioProjects\projett\JeTaimeAnass\app\app.iml" filepath="C:\Users\Anass\AndroidStudioProjects\projett\JeTaimeAnass\app\app.iml" />
     </modules>
   </component>
 </project>
