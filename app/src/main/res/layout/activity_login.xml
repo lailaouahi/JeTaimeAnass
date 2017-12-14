@@ -18,14 +18,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="165dp"
-            android:layout_height="116dp"
+        <TextView
+            android:layout_width="195dp"
+            android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
             android:padding="16dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="20dp"
-            android:background="" />
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="70dp"
+            android:text="TeamFinder"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/mauve"
+             />
 
         <TextView
             android:layout_width="wrap_content"
