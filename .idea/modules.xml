@@ -3,10 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JeTaimeAnass.iml" filepath="$PROJECT_DIR$/JeTaimeAnass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LogRegister.iml" filepath="$PROJECT_DIR$/LogRegister.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../Anass/AndroidStudioProjects/projett/JeTaimeAnass/LogRegister.iml" filepath="$PROJECT_DIR$/../../../Anass/AndroidStudioProjects/projett/JeTaimeAnass/LogRegister.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../Anass/AndroidStudioProjects/projett/JeTaimeAnass/app/app.iml" filepath="$PROJECT_DIR$/../../../Anass/AndroidStudioProjects/projett/JeTaimeAnass/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-connector-java-5.1.45-bin/mysql-connector-java-5.1.45-bin.iml" filepath="$PROJECT_DIR$/mysql-connector-java-5.1.45-bin/mysql-connector-java-5.1.45-bin.iml" />
     </modules>
   </component>
 </project>

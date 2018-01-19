@@ -4,50 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.logregister.CreerEvenement"
     android:background="@drawable/rose"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.example.user.logregister.CreerEvenement">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Formulaire de Création d'un évènement"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="@color/mauve"
-                android:inputType="textEmailAddress"
-                android:drawablePadding="2dp"
-                android:layout_marginTop="25dp"
                 android:layout_gravity="center"
-                />
+                android:layout_marginTop="25dp"
+                android:drawablePadding="2dp"
+                android:inputType="textEmailAddress"
+                android:text="Formulaire de Création d'un évènement"
+                android:textColor="@color/mauve"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nom de l'évènement"
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:textColor="@color/blanc"
-                android:inputType="textEmailAddress"
-                android:drawablePadding="2dp"
-                android:layout_marginTop="35dp"
                 android:layout_marginLeft="15dp"
-                />
+                android:layout_marginTop="35dp"
+                android:drawablePadding="2dp"
+                android:inputType="textEmailAddress"
+                android:text="Nom de l'évènement"
+                android:textColor="@color/blanc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/idNomEvenement"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -105,16 +103,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choisissez la date de votre'évènement"
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:textColor="@color/blanc"
-                android:inputType="textEmailAddress"
-                android:drawablePadding="2dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginLeft="15dp"
                 android:layout_margin="20dp"
-                />
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:drawablePadding="2dp"
+                android:inputType="textEmailAddress"
+                android:text="Choisissez la date de votre'évènement"
+                android:textColor="@color/blanc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <DatePicker
                 android:id="@+id/idDate"
@@ -147,17 +144,18 @@
                 android:id="@+id/idLieu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
             <Button
                 android:id="@+id/idTrouverLieu"
-                android:text="Trouver Lieu"
-                android:textColor="@color/rosefushia"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginRight="230dp"
                 android:layout_weight="0.06"
-                android:layout_margin="10dp"
                 android:background="@drawable/boutton"
-                />
+                android:onClick="onClick"
+                android:text="Trouver Lieu"
+                android:textColor="@color/rosefushia" />
 
             <Button
                 android:id="@+id/idSubmitCréation"

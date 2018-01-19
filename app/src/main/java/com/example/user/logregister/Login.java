@@ -40,7 +40,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             if(password.equals(passMaatch)){
                 Toast pass = Toast.makeText(Login.this,"Bienvenu",Toast.LENGTH_SHORT);
                 pass.show();
-                startActivity(new Intent(this,ChoixSenario.class));
+                Intent intent = new Intent(this,ChoixSenario.class);
+                intent.putExtra("USERNAME", username);
+                startActivity(intent);
             }else{
                 Toast pass = Toast.makeText(Login.this,passMaatch,Toast.LENGTH_SHORT);
                 pass.show();

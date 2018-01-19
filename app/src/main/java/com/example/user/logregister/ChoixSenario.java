@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class ChoixSenario extends AppCompatActivity implements View.OnClickListener {
-    Button btnChoixCreate, btnChoixAdherer, btnChoixLieu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,9 +14,23 @@ public class ChoixSenario extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View v){
+        String username = getIntent().getStringExtra("USERNAME");
         switch (v.getId()) {
             case R.id.idCréerEvènement :
-                startActivity(new Intent(this,CreerEvenement.class));
+                Intent intent = new Intent(this,CreerEvenement.class);
+                intent.putExtra("USERNAME", username);
+                startActivity(intent);
+                break;
+            case R.id.idAdhérerEvènement:
+                intent = new Intent(this, SearshEvenement.class);
+                intent.putExtra("USERNAME", username);
+                startActivity(intent);
+                break;
+            case R.id.idOffrirLieu :
+                intent = new Intent(this, MapsLocation.class);
+                intent.putExtra("ADDlocation", true);
+                startActivity(intent);
+                break;
         }
     }
 }
